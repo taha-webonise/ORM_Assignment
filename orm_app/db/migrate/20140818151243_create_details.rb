@@ -2,8 +2,7 @@ class CreateDetails < ActiveRecord::Migration
   def change
     create_table :details do |t|
       t.string :attributes_name
-      t.string :string
-
+      t.references :detailable, polymorphic: true
       t.timestamps
     end
   end
