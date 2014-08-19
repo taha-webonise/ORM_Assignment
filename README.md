@@ -1,6 +1,6 @@
 ORM_Assignment
 ==============
 
-"ormapp" directory contains ORM Assignment done using mysql2.
+"orm_app" directory contains ORM Assignment done using mysql2.
 
-"odmapp" directory contains ODM. optional.
+"odm_app" directory contains ODM. optional.
