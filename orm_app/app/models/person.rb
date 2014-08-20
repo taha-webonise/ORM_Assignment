@@ -1,9 +1,9 @@
 class Person < ActiveRecord::Base
-  self.inheritance_column = :type
+  self.inheritance_column = :person_type
   scope :users, -> { where(type: "User")}
   scope :admins, -> { where(type: "Admin")}
 
-  has_many :details, as: :detailable
+  has_one :detail, as: :detailable
   
   has_many :purchase_histories
   has_many :products, through: :purchase_histories
